@@ -1,0 +1,12 @@
+<div class="navbar-fixed">
+  <nav>
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        {{# each navLinks}}
+          <li><a{{#ifeq ../section key}}class="active"{{else}}{{/ifeq}} href="{{ href }}">{{ label }}</a></li>
+        {{/each}}
+      </ul>
+    </div>
+  </nav>
+</div>

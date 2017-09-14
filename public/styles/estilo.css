@@ -1,0 +1,563 @@
+#body{
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+hr {
+  display: block;
+  margin: auto;
+  width: 14vw;
+  height: 3px;
+}
+
+/***************/
+/**** NAV *****/
+/*************/
+
+nav {
+  background-color: rgba(192,192,192, 0);
+  transition-duration: 0.7s;
+  box-shadow: none;
+}
+
+
+/***************/
+/**** HOME ****/
+/*************/
+
+.home {
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.cubrir-video {
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background: rgba(75,121,161,0.4)
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.home h2, h4, button {
+  margin: 0;
+  text-align: center;
+}
+
+.home h1 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px;
+  display: table;
+  margin: auto;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.home h4 {
+  padding-top: 30px;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.home-contenido {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 35vh;
+}
+
+.home-contenido button {
+  display: none;
+  margin: auto;
+  margin-top: 15%;
+}
+
+.home-contenido .conocenos {
+  margin-top: 12%;
+}
+
+.home-contenido .conocenos p {
+  margin: 0;
+  text-align: center;
+}
+
+.home-contenido .conocenos i {
+  display: table;
+  margin: auto;
+  font-size: 5em
+}
+
+/***************/
+/**** SERV ****/
+/*************/
+
+.servicios {
+  background-color: grey;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+
+/***************/
+/**** EXP *****/
+/*************/
+
+.experiencia {
+  background-color: red;
+  background-size: cover;
+  background-position: center;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100vh;
+  transition: all ease-in 0.5s;
+}
+
+.experiencia h1 {
+  text-align: center;
+  color: white;
+}
+
+.experiencia .col {
+  display: block;
+}
+
+.single-item .exp-slide-item img {
+    width: 100%;
+    height: auto;
+}
+
+/*******************/
+/**** CONTACTO ****/
+/******************/
+
+.contacto {
+  background-image:  url("../images/fondo-contacto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 100%;
+  height: 100vh;
+}
+
+.contacto .row:first-child {
+  margin-top: 30px;
+}
+
+.contacto hr {
+  background-color: aqua;
+}
+
+.contacto .input-field label{
+  color: black;
+}
+
+.contacto .btn {
+  width: 100%
+}
+
+.contacto .contacto-datos {
+  padding-top: 40px;
+}
+
+.contacto i{
+  vertical-align: top;
+  font-size: 1.5em;
+  padding-right: 8px;
+  font-weight: bold;
+}
+
+.contacto .redes-sociales {
+  font-size: 1.5em;
+  margin-top: 15px;
+}
+
+.redes-sociales .mdl-grid {
+  margin: 0;
+  padding: 0;
+}
+
+.contacto span {
+  font-weight: bold;
+}
+
+.contacto p {
+  font-weight: bold;
+}
+
+#ic-facebook {
+  color: #3b5998;
+  transition: all 1s linear;
+
+}
+#ic-instagram {
+  color: #d8246d;
+  transition: all 1s;
+
+}
+
+#ic-linkedin {
+  color: #0177b5;
+  transition: all 1s;
+
+}
+
+#ic-twitter {
+  color: #00aced;
+  transition: all 1s;
+
+}
+
+/***************/
+/**** BLOG ****/
+/*************/
+
+.blog nav {
+  background-color: white;
+}
+
+.blog nav a{
+  color: black;
+}
+
+.blog-header {
+  width: 100%;
+  height: 60vh;
+  background-image: url('../images/blog-header.jpeg');
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.blog-header-content {
+  position: relative;
+  top: 25%;
+  padding-left: 25px;;
+}
+
+.blog-header-content h4 {
+  text-align: left;
+  margin: 0px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  color: white;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.blog-header-content h6 {
+  padding-left: 20px;
+  color: rgba(224, 224, 224, 0.81);
+  text-transform: uppercase;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+               0px 8px 13px rgba(0,0,0,0.1),
+               0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.blog-content {
+  margin-top: 5vh;
+}
+
+.post-img {
+  width: 100%;
+  height: 40%;
+}
+
+.post-data {
+  margin: 0;
+  width: 100%;
+  height: 55%;
+  padding: 15px;
+}
+
+.leermas {
+  height: 5%;
+}
+
+.blog p span:first-child {
+  font-size: 1em !important;
+}
+
+.blog .posts {
+  column-count: 2;
+  padding: 1em;
+}
+
+.blog .posts-child {
+  display: inline-block;
+  margin: 1em 0em 1em;
+  width: 85%;
+  transition: all linear 0.3s;
+}
+
+.blog .post-data span {
+  font-size: 0.7em;
+  padding-right: 10px;
+}
+
+.blog i {
+  font-size: 1em;
+}
+
+.blog button {
+  float: right;
+}
+
+.blog button a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.blog hr {
+width: 100%;
+height: 1px;
+margin-top: 25px;
+margin-bottom: 50px;
+background-color: black;
+}
+
+.blog .pagination {
+  display: table;
+  margin: auto;
+}
+
+/***************/
+/**** POST ****/
+/*************/
+
+.post-header {
+  height: 60vh;
+  width: 100vw;
+}
+
+.post-header h3 {
+  display: table;
+  margin: auto;
+  position: relative;
+  top: 20vh;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 20px;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+   z-index: 5;
+}
+
+.cover {
+  width: 100%;
+  height: 100%;
+  transition: all 1s;
+}
+
+.post-contenido {
+  background-color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.post-contenido-lateral hr {
+  width: 100%;
+  background-color: black;
+  height: 1px;
+}
+
+
+/***************/
+/**** OTROS ****/
+/***************/
+
+.tituloSeccion {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin-top: 6%;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+             0px 8px 13px rgba(0,0,0,0.1),
+             0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.escondido {
+     opacity:0;
+}
+
+.visible {
+     opacity:1;
+}
+
+.sombra1 {
+  box-shadow: 0px 8px 0px rgba(0,0,0,0.19), 0px 5px 6px rgba(0,0,0,0.23);
+}
+
+.sombra2 {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+/*****************/
+/**** MEDIA Q ****/
+/*****************/
+
+@media screen and (max-width: 480px) {
+    .container {
+          margin: 0 auto;
+          width: 95%;
+        }
+ }
+
+ @media screen and (max-width: 480px){
+   .tituloSeccion {
+         margin-top: 15%;
+       }
+ }
+
+ @media screen and (max-width: 960px){
+   .tituloSeccion {
+         margin-top: 15%;
+       }
+ }
+
+ @media screen and (max-width: 1120px) {
+     .home-contenido .conocenos {
+            margin-top: 20%;
+         }
+  }
+
+  @media screen and (max-width: 790px) {
+      .home-contenido .conocenos {
+             margin-top: 30%;
+          }
+   }
+
+ /*********************/
+ /**** PAGINATION ****/
+ /*******************/
+ .pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a,
+.pagination > li > span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination > li:first-child > a,
+.pagination > li:first-child > span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination > li:last-child > a,
+.pagination > li:last-child > span {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #23527c;
+  background-color: #eee;
+  border-color: #ddd;
+}
+.pagination > .active > a,
+.pagination > .active > span,
+.pagination > .active > a:hover,
+.pagination > .active > span:hover,
+.pagination > .active > a:focus,
+.pagination > .active > span:focus {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
+.pagination > .disabled > span,
+.pagination > .disabled > span:hover,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > a,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > a:focus {
+  color: #777;
+  cursor: not-allowed;
+  background-color: #fff;
+  border-color: #ddd;
+}
+.pagination-lg > li > a,
+.pagination-lg > li > span {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.3333333;
+}
+.pagination-lg > li:first-child > a,
+.pagination-lg > li:first-child > span {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.pagination-lg > li:last-child > a,
+.pagination-lg > li:last-child > span {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+.pagination-sm > li > a,
+.pagination-sm > li > span {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+}
+.pagination-sm > li:first-child > a,
+.pagination-sm > li:first-child > span {
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.pagination-sm > li:last-child > a,
+.pagination-sm > li:last-child > span {
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
