@@ -13,7 +13,8 @@ var handlebars = require('express-handlebars');
 keystone.init({
 	'name': 'cym',
 	'brand': 'cym',
-
+	'port': 3010,
+	'cloudinary config': 'cloudinary://935566443636151:w_SNNwOAnQrkZqw9hCErvloWvCk@codingyourmind',
 	'sass': 'public',
 	'static': 'public',
 	'favicon': 'public/favicon.ico',

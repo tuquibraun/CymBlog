@@ -4,16 +4,23 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title>cym</title>
+		<title>blog</title>
 		<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" href="/styles/materialize.min.css">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-		<script src="https://use.fontawesome.com/1287cda04e.js"></script>
-		<link href="/styles/estilo.css" rel="stylesheet">
-		<link rel="stylesheet" href="/styles/animate.css">
-		<link rel="stylesheet" href="/styles/jquery.pagepiling.css">
-		<link rel="stylesheet" href="/styles/owl.carousel.min.css">
-		<link rel="stylesheet" href="/styles/owl.theme.default.css">
+		<link href="/styles/site.css" rel="stylesheet">
+		<!-- Custom CSS-->
+    <link href="/styles/general.css" rel="stylesheet">
+
+	 <!-- Owl-Carousel -->
+	<link href="/styles/owl.carousel.min.css" rel="stylesheet">
+  <link href="/styles/owl.theme.default.css" rel="stylesheet">
+	<link href="/styles/style.css" rel="stylesheet">
+	<link href="/styles/animate.css" rel="stylesheet">
+	<script src="https://use.fontawesome.com/1287cda04e.js"></script>
+
+	<!-- Magnific Popup core CSS file -->
+	<link rel="stylesheet" href="/styles/magnific-popup.css">
+
+	<script src="/js/modernizr-2.8.3.min.js"></script>  <!-- Modernizr /-->
 
 		{{!-- This file provides the default styling for the KeystoneJS Content Editor
 			- only renders when user is logged in and admin--}}
@@ -26,10 +33,15 @@
 			<script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
 
-</head>
+	</head>
 	<body>
+
 		<div id="body">
 
+			<!-- Preloader -->
+<div id="preloader">
+	<div id="status"></div>
+</div>
 			<!--
 				Flash messages allow you to display once-off status messages to users, e.g. form
 				validation errors, success messages, etc
@@ -62,26 +74,33 @@
 			{{{body}}}
 		</div>
 
-		{{!--
-			//- jQuery 1.11.3 is included by default, and required by both Bootstrap
-			//- and the KeystoneJS Content Editor. If you are not targeting IE8,
-			//- you can upgrade to 2.1.4 (also bundled) for better performance.
-		--}}
 		<script src="/js/jquery/jquery-1.11.3.min.js"></script>
-		{{!--
-			//- Customise which Bootstrap javascript files are served by including
-			//- them specifically here, instead of bootstrap-3.3.5.min.js
-		--}}
-		<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-		<script src="/js/materialize.min.js"></script>
-				<script type="text/javascript" src="/js/jquery.pagepiling.min.js"></script>
-		<script src="/js/miJs.js"></script>
-
-		<script src="/js/jquery.vide.js"></script>
+		<script src="/js/bootstrap/bootstrap-3.3.5.min.js"></script>
 		<script src="/js/owl.carousel.min.js"></script>
+	<script src="/js/script.js"></script>
+	<!-- StikyMenu -->
+	<script src="/js/stickUp.min.js"></script>
+	<script type="text/javascript">
+	  jQuery(function($) {
+		$(document).ready( function() {
+		  $('.navbar-default').stickUp();
 
-		</script>
+		});
+	  });
+
+	</script>
+	<!-- Smoothscroll -->
+	<script type="text/javascript" src="js/jquery.corner.js"></script>
+	<script src="/js/wow.min.js"></script>
+	<script>
+	 new WOW().init();
+	</script>
+	<script src="/js/classie.js"></script>
+	<script src="/js/uiMorphingButton_inflow.js"></script>
+	<script src="/js/jquery.vide.js"></script>
+	<!-- Magnific Popup core JS file -->
+	<script src="/js/jquery.magnific-popup.js"></script>
+	<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 		{{{isAdminEditorJS user}}}
 	</body>
 </html>

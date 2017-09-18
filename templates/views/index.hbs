@@ -1,143 +1,234 @@
-{{>nav}}
+{{!!< default}}
+<div id="home">
 
-<div id="pagepiling">
-<!-- SECCION HOME -->
-<div class="home section">
-	<div class="cubrir-video">
-		<div id="video" data-vide-bg="images/fondo" data-vide-options="position: 0% 50%">
-				<div class="home-contenido">
-					 <h1 class="border escondido"> Coding Your Mind </h1>
+	<!-- SECCION HOME -->
+	<div class="home section">
+		<div class="cubrir-video">
+			<div id="video" data-vide-bg="images/fondo" data-vide-options="position: 0% 50%">
+					<div class="home-contenido">
+						 <h1 class="border wow bounceInDown"> Coding Your Mind </h1>
 
-					 <h4 class="escondido"> de tu mente a la web </h4>
+						 <h4 class="wow bounceInRight" data-wow-delay="0.5s"> de tu mente a la web </h4>
 
-					<div class="conocenos escondido">
-						<p>CONOCENOS</p>
-						<i class="material-icons">keyboard_arrow_down</i>
-					</div>
+						<div class="conocenos escondido">
+							<p>CONOCENOS</p>
+							<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+						</div>
+				</div>
 			</div>
 		</div>
+
 	</div>
 
-</div>
-
-<!-- SECCION SERVICIOS -->
-<div class="servicios section">
-		<h1 class="tituloSeccion"> SERVICIOS </h1>
-</div>
-
-<!-- SECCION EXPERIENCIA -->
-
-<div class="experiencia section">
-				<div class="row">
-					<div class="col l6 m6 s12">
-						<div class="owl-carousel">
-
-						<div class="exp-slide-item">
-							<img src="images/exp1.png" alt="">
-						</div>
-						<div class="exp-slide-item">
-							<img src="images/exp1.png" alt="">
-						</div>
-						<div class="exp-slide-item">
-							<img src="images/exp1.png" alt="">
-						</div>
-
-						</div>
-					</div>
-          <div class="col l6 m6 s12">
-                    <h3 class="section-heading">Drag Gallery</h3>
-						<div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div>
-	                    <p class="lead">
-							In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.
-							Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur,
-							uam non erat mirum sapientiae lorem cupido
-							patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.
-						</p>
-
-						 <p><a class="btn btn-embossed btn-primary" href="#" role="button">View Details</a>
-						 <a class="btn btn-embossed btn-info" href="#" role="button">Visit Website</a></p>
-					</div>
-			</div>
-
-</div>
-
-<!-- SECCION CONTACTO -->
-
-<div class="contacto section">
-		<h1 class="tituloSeccion"> CONTACTO </h1>
-		<hr>
-
+<!-- NavBar-->
+{{>nav}}
+<!-- What is -->
+	<div id="servicios" class="content-section-b" style="border-top: 0">
 		<div class="container">
 
+			<div class="col-md-6 col-md-offset-3 text-center wrap_title">
+				<h2 class="tituloSeccion">SERVICIOS</h2>
+
+			</div>
+
+			<div class="row servicios">
+
+				<div class="servicio col-sm-4 wow fadeInDown text-center">
+					<div class="servicio-card">
+					<div class="front">
+						<img class="rotate" src="images/icon/servicios-landing.svg" alt="Generic placeholder image">
+						<h3>Landing Page</h3>
+						<p class="lead">Creamos tu Landing Page para que tu producto o servicio sea visto por la mayor cantidad de personas posible </p>
+						<p><a class="btn btn-embossed btn-primary view" role="button">Ver más</a></p>
+					</div>
+					<div class="back">
+						<p class="lead">Una landing page, o página de aterrizaje, es una página web diseñada para
+							mostrar detalles del producto o servicio que se desea vender, convirtiendo así, visitantes en clientes finales.
+						</p>
+						<p><a class="btn btn-embossed btn-primary card-back" role="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></p>
+					</div>
+					</div>
+				</div><!-- /.col-lg-4 -->
+
+				<div class="servicio col-sm-4 wow fadeInDown text-center">
+					<div class="servicio-card">
+
+					<div class="front">
+					   <img  class="rotate" src="images/icon/servicios-comerce.svg" alt="Generic placeholder image">
+					   <h3>E-Commerce</h3>
+						 <p class="lead">Aumentamos el alcance de tus ventas de forma global y le damos funcionalidad
+							  las 24 horas del día, todos los días </p>
+						 <p><a class="btn btn-embossed btn-primary view" role="button">Ver más</a></p>
+					</div>
+					<div class="back">
+						<p class="lead">EL e-commerce o comercio electrónico es un metodo de compraventa online de productos o servicios. Esta modalidad
+						de comercio es muy popular actualmente y genera ventajas como eliminar barreras geográficas, reducir costos y aumentar la participación
+					  en la cartelera de los clientes</p>
+
+						<p><a class="btn btn-embossed btn-primary card-back" role="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></p>
+					</div>
+					</div>
+				</div><!-- /.col-lg-4 -->
+
+				<div class="servicio col-sm-4 wow fadeInDown text-center">
+					<div class="servicio-card">
+					<div class="front">
+					   <img  class="rotate" src="images/icon/servicios-mobile.svg" alt="Generic placeholder image">
+					   <h3>Mobile Apps</h3>
+						 <p class="lead">Transformamos tus ideas en aplicaiónes móviles de utilidad para ser descargadas en la mayor cantidad de dispositivos</p>
+						 <p><a class="btn btn-embossed btn-primary view" role="button">Ver más</a></p>
+					</div>
+					<div class="back">
+						<p class="lead">Sinceramente, no hay mucho que explicar sobre esto. ¿A cuantas personas conoce que no tenga un smartphone? Se podrían contar con los dedos de una mano.
+							 El alcance de las aplicaciones moviles es inmenso </p>
+						<p><a class="btn btn-embossed btn-primary card-back" role="button"><i class="fa fa-arrow-left" aria-hidden="true"></i></a></p>
+					</div>
+					</div>
+
+				</div><!-- /.col-lg-4 -->
+
+			</div><!-- /.row -->
+		</div>
+	</div>
+
+	<div  class="content-section-c ">
+		<div class="container">
 			<div class="row">
+			<div class="col-md-6 col-md-offset-3 text-center white">
+				<h2>¿Te interesan nuestros servicios?</h2>
+				<p class="lead" style="margin-top:0">Contactanos para comenzar con tu proyecto</p>
+			 </div>
+			</div>>
+		</div>
+	</div>
 
-			  <div class="col s6 contacto-formulario escondido">
-					<form action="#">
-						<div class="row">
-						  <div class="input-field col s6">
-							    <input id="nombre" type="text" class="validate">
-							    <label for="nombre">Nombre</label>
-							</div>
-						  <div class="input-field col s6">
-							    <input id="email" type="email" class="validate">
-							    <label for="email">Email</label>
-							</div>
-						</div>
-						<div class="row">
-						  <div class="input-field col s12">
-									<input id="tema" type="text" class="validate">
-									<label for="tema">Tema</label>
-							</div>
-						</div>
-						<div class="row">
-							<div class="input-field col s12">
-							    <textarea id="mensaje" class="materialize-textarea" ></textarea>
-							    <label for="mensaje">Mensaje...</label>
-							</div>
-						</div>
+    <div class="content-section-b">
+<h2 class="tituloSeccion">EXPERIENCIA</h2>
+		<div class="container">
+            <div class="row">
+                <div class="col-sm-6 wow fadeInLeftBig">
+                     <div id="owl-carousel" class="owl-carousel owl-theme">
+												<a href="images/servicios/exp1.png" class="image-link">
+													<div class="item">
+														<img  class="img-responsive img-rounded" src="images/servicios/exp1.png" alt="">
+													</div>
+												</a>
+												<a href="images/servicios/exp1.png" class="image-link">
+													<div class="item">
+														<img  class="img-responsive img-rounded" src="images/servicios/exp2.png" alt="">
+													</div>
+												</a>
+											</div>
+                </div>
 
-						<div class="row">
-							<div class="input-field col s12">
-								<a class="waves-effect waves-light btn">
-								 	Enviar mensaje
-								</a>
-							</div>
-						</div>
+          <div class="col-sm-6 wow fadeInRightBig"  data-animation-delay="200">
+						<div class="carousel-info animated">
+			          <h3 class="section-heading">Landing page Gimnasio Vital</h3>
+								<div class="sub-title lead3">Modelo de landing page responsivo, sencillo y util. Caracteristicas: </div>
+								<ul>
+									<li>Diseño intuitivo</li>
+									<li>Diseño responsivo</li>
+									<li>Animaciones de entrada</li>
+									<li>Imagenes parallax</li>
+									<li>Sistema de horarios con transiciones</li>
+									<li>Google map con marcador personalizado</li>
+									<li>Formulario de contacto</li>
+								</ul>
 
-					</form>
+								 <a class="btn btn-embossed btn-info" href="vitalgym/index.html" target="_blank" role="button">Ver</a></p>
+						 </div>
+						 <div class="carousel-info animated">
+								 <h3 class="section-heading">AAAAA/<h3>
+								 <div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div>
+								 <p class="lead">
+									 In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.
+									 Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur,
+									 uam non erat mirum sapientiae lorem cupido
+									 patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.
+								 </p>
+
+									<a class="btn btn-embossed btn-info" href="#" role="button">Ver</a></p>
+							</div>
 				</div>
+			</div>
+        </div>
+    </div>
 
-			  <div class="col s6 contacto-datos escondido">
-						<p>En caso de que tengas dudas, inquietudes o algun otro motivo,
-							vas a poder contactarte con Coding Your Mind a través de nuestras redes sociales,
-							teléfono o mail. Responderemos con gusto y lo antes posible.</p>
-							<div class="contacto-telefono">
-								<i class="material-icons">phone</i><span>+54 9 298-4862631</span>
-							</div>
-							<div class="contacto-mail">
-								<i class="material-icons">mail_outline</i><span>contacto@codingyourmind.com</span>
-							</div>
-							<div class="redes-sociales">
-								<p> También encontranos en nuestras redes sociales: </p>
-								<div class="row">
-									<div class="col s2">
-										<i class="fa fa-facebook-square escondido" aria-hidden="true" id="ic-facebook"></i>
-									</div>
-									<div class="col s2">
-										<i class="fa fa-instagram escondido" aria-hidden="true" id="ic-instagram"></i>
-									</div>
-									<div class="col s2">
-										<i class="fa fa-linkedin-square escondido" aria-hidden="true" id="ic-linkedin"></i>
-									</div>
-									<div class="col s2">
-										<i class="fa fa-twitter-square escondido" aria-hidden="true" id="ic-twitter"></i>
-									</div>
+	<!-- SECCION CONTACTO -->
+
+	<div class="contacto section">
+			<h2 class="tituloSeccion"> CONTACTO </h2>
+
+			<div class="container">
+
+				<div cl
+				  <div class="col-12 col-md-6 contacto-formulario wow slideInLeft">
+						<form action="#">
+							<div class="row">
+								<div class="col-md-6 col-sm-6 col">
+									<div class="form-group">
+										 <label for="exampleFormControlInput1">Nombre</label>
+										 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+									 </div>
+								</div>
+								<div class="col-md-6 col-sm-6 col">
+									<div class="form-group">
+										 <label for="exampleFormControlInput1">Email</label>
+										 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+									 </div>
 								</div>
 							</div>
+							<div class="row">
+								<div class="col-12 col">
+									<div class="form-group">
+										 <label for="exampleFormControlInput1">Tema</label>
+										 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tema">
+									 </div>
+								 </div>
+							</div>
+							<div class="row">
+								<div class="col-12 col">
+									<div class="form-group">
+									    <label for="exampleFormControlTextarea1">Example textarea</label>
+									    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									 </div>
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-12">
+									<button type="submit" class="btn btn-primary">Enviar</button>
+								</div>
+							</div>
+
+						</form>
+					</div>
+
+				  <div class="col-12 col-md-6 contacto-datos wow slideInRight">
+							<p>En caso de que tengas dudas, inquietudes o algun otro motivo,
+								vas a poder contactarte con Coding Your Mind a través de nuestras redes sociales,
+								teléfono o mail. Responderemos con gusto y lo antes posible.</p>
+								<div class="contacto-telefono">
+									<i class="fa fa-phone" aria-hidden="true"></i><span>+54 9 298-4862631</span>
+								</div>
+								<div class="contacto-mail">
+									<i class="fa fa-envelope-o" aria-hidden="true"></i><span>contacto@codingyourmind.com</span>
+								</div>
+								<div class="redes-sociales">
+									</br><p> También encontranos en nuestras redes sociales: </p>
+									<div class="redes-sociales-iconos">
+											<i class="fa fa-facebook-square wow bounceInRight" data-wow-delay="0.5s" aria-hidden="true" id="ic-facebook"></i>
+										<a href="https://www.instagram.com/codeyourmindarg/" target="_blank">	<i class="fa fa-instagram wow bounceInRight" data-wow-delay="1s" aria-hidden="true" id="ic-instagram"></i></a>
+											<i class="fa fa-linkedin-square wow bounceInRight" data-wow-delay="1.5s" aria-hidden="true" id="ic-linkedin"></i>
+											<i class="fa fa-twitter-square wow bounceInRight" data-wow-delay="2s" aria-hidden="true" id="ic-twitter"></i>
+									</div>
+								</div>
+					</div>
+
 				</div>
 
 			</div>
 
 		</div>
 
-	</div>
+</div>
