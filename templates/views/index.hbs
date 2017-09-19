@@ -4,7 +4,7 @@
 	<!-- SECCION HOME -->
 	<div class="home section">
 		<div class="cubrir-video">
-			<div id="video" data-vide-bg="images/fondo" data-vide-options="position: 0% 50%">
+			<div id="video" data-vide-bg="images/fondo" data-vide-options="posterType: jpg, position: 50% 50%, resizing:true">
 					<div class="home-contenido">
 						 <h1 class="border wow bounceInDown"> Coding Your Mind </h1>
 
@@ -96,7 +96,7 @@
 			<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center white">
 				<h2>¿Te interesan nuestros servicios?</h2>
-				<p class="lead" style="margin-top:0">Contactanos para comenzar con tu proyecto</p>
+				<a role="button" class="btn btn-primary" href="#contacto" >Contactanos para comenzar con tu proyecto</a>
 			 </div>
 			</div>>
 		</div>
@@ -111,11 +111,6 @@
 												<a href="images/servicios/exp1.png" class="image-link">
 													<div class="item">
 														<img  class="img-responsive img-rounded" src="images/servicios/exp1.png" alt="">
-													</div>
-												</a>
-												<a href="images/servicios/exp1.png" class="image-link">
-													<div class="item">
-														<img  class="img-responsive img-rounded" src="images/servicios/exp2.png" alt="">
 													</div>
 												</a>
 											</div>
@@ -137,18 +132,6 @@
 
 								 <a class="btn btn-embossed btn-info" href="vitalgym/index.html" target="_blank" role="button">Ver</a></p>
 						 </div>
-						 <div class="carousel-info animated">
-								 <h3 class="section-heading">AAAAA/<h3>
-								 <div class="sub-title lead3">Lorem ipsum dolor sit atmet sit dolor greand fdanrh<br> sdfs sit atmet sit dolor greand fdanrh sdfs</div>
-								 <p class="lead">
-									 In his igitur partibus duabus nihil erat, quod Zeno commuta rest gestiret.
-									 Sed virtutem ipsam inchoavit, nihil ampliusuma. Scien tiam pollicentur,
-									 uam non erat mirum sapientiae lorem cupido
-									 patria esse cariorem. Quae qui non vident, nihilamane umquam magnum ac cognitione.
-								 </p>
-
-									<a class="btn btn-embossed btn-info" href="#" role="button">Ver</a></p>
-							</div>
 				</div>
 			</div>
         </div>
@@ -156,7 +139,7 @@
 
 	<!-- SECCION CONTACTO -->
 
-	<div class="contacto section">
+	<div class="contacto section" id="contacto">
 			<h2 class="tituloSeccion"> CONTACTO </h2>
 
 			<div class="container">
@@ -167,30 +150,30 @@
 							<div class="row">
 								<div class="col-md-6 col-sm-6 col">
 									<div class="form-group">
-										 <label for="exampleFormControlInput1">Nombre</label>
-										 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre">
+										 <label for="nombre">Nombre</label>
+										 <input type="text" class="form-control" id="nombre" placeholder="Nombre">
 									 </div>
 								</div>
 								<div class="col-md-6 col-sm-6 col">
 									<div class="form-group">
-										 <label for="exampleFormControlInput1">Email</label>
-										 <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="mail@ejemplo.com">
+										 <label for="email">Email</label>
+										 <input type="email" class="form-control" id="email" placeholder="mail@ejemplo.com">
 									 </div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-12 col">
 									<div class="form-group">
-										 <label for="exampleFormControlInput1">Tema</label>
-										 <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Tema">
+										 <label for="tema">Tema</label>
+										 <input type="text" class="form-control" id="tema" placeholder="Tema">
 									 </div>
 								 </div>
 							</div>
 							<div class="row">
 								<div class="col-12 col">
 									<div class="form-group">
-									    <label for="exampleFormControlTextarea1">Example textarea</label>
-									    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+									    <label for="mensaje">Mensaje</label>
+									    <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensjae..."></textarea>
 									 </div>
 								</div>
 							</div>
