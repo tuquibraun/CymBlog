@@ -17,7 +17,7 @@ keystone.init({
 	'cloudinary config': 'cloudinary://935566443636151:w_SNNwOAnQrkZqw9hCErvloWvCk@codingyourmind',
 	'sass': 'public',
 	'static': 'public',
-	'favicon': 'public/favicon.ico',
+	'favicon': 'public/images/favicon.png',
 	'views': 'templates/views',
 	'view engine': '.hbs',
 
