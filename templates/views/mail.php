@@ -1,5 +1,5 @@
 <?php
-$para = "codeyourmindarg@gmail.com";
+$para = "tuquibraun@gmail.com";
 $tema = $_POST['tema'];
 $de = $_POST['nombre']
 $mensaje = $_POST['mensaje'];
