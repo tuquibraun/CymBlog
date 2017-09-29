@@ -1,16 +1,59 @@
-.contacto-seccion {
+body {
+  font-family: 'Roboto' !important;
+}
+
+#footer {
+  margin: 0px;
+  padding: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #1abc9c;
+  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22),-18px 10px 22px -7px rgba(0,0,0,0.35), 18px 15px 22px -7px rgba(0,0,0,0.35);
+}
+
+#footer h4 {
+  margin: 0px;
+  color: black;
+}
+
+.contacto-formulario {
   background-image: url("../images/contacto.jpg");
   background-size: cover;
+  background-position: center;
   height: 100vh;
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+.contacto-formulario .form-control{
+    background-color: rgba(0, 0, 0, 0);
+    color: floralwhite;
+}
+
+.contacto-formulario option {
+  color: black;
+}
+
+.contacto-formulario .tituloSeccion{
+  color: white;
+  padding-bottom: 30px;
+}
+
+.contacto-formulario button {
   width: 100%;
 }
 
-.contacto-seccion .form-control{
-    background-color: rgba(0, 0, 0, 0);
+.contacto-formulario label {
+  color: #1abc9c;
 }
 
-.contacto-seccion .tituloSeccion{
-  color: white;
+.contacto-formulario .jumbotron {
+  background-color: rgba(0, 0, 0, 0);
+  color: ghostwhite;
+}
+
+.contacto-formulario .jumbotron p, .contacto-formulario .jumbotron h1 {
+  text-align: center;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -295,7 +338,7 @@ background-color: black;
 .tituloSeccion {
   display: block;
   margin: auto;
-  font-size: 3em;
+  font-size: 2.5em;
   text-align: center;
   margin-top: 0px;
   padding-top: 4%;
@@ -310,7 +353,6 @@ background-color: black;
 }
 
 .sombra2 {
-
     box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22),-18px 10px 22px -7px rgba(0,0,0,0.35), 18px 15px 22px -7px rgba(0,0,0,0.35) ;
 }
 

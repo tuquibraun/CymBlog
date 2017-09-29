@@ -18,12 +18,14 @@
 
 								{{# each data.posts.results}}
 								<div class="posts-child sombra1">
+									<a href="{{postUrl slug}}" >
 												{{#if image}}<img src="{{{cloudinaryUrl image crop='fit' }}}" class="post-img">{{/if}}
 											<div class="post-data">
 												<span> {{date publishedDate format='DD MM YYYY'}}</span>|<span class="text-muted">{{{categoryList categories}}}</span>
-												<h5><a href="{{postUrl slug}}" >{{{title}}}</a></h5>
+												<h5>{{{title}}}</h5>
 												<p class="truncate">{{{content.brief}}}</p>
 											</div>
+											</a>
 								</div>
 								{{/each}}
 					</div>

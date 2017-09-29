@@ -1,63 +1,66 @@
+<div class="contacto-formulario">
 {{>nav}}
-<div class="contacto-seccion">
+
+{{#if enquirySubmitted}}
+	<div class="jumbotron">
+	  <h1>Gracias por escribirnos!</h1>
+	  <p> Su mensaje fue enviado, nos pondremos con contacto lo antes posible!</p>
+	  <p><a class="btn btn-primary btn-lg" href="/" role="button">Volver al inicio</a></p>
+	</div>
+{{else}}
 
 	<div class="container">
-		<h1 class="tituloSeccion">CONTACTANOS</h1>
+		<h1 class="tituloSeccion">Contactanos</h1>
 	</div>
 	<div class="container">
-		{{#if enquirySubmitted}}
-			<h3>Thanks for getting in touch.</h3>
-		{{else}}
-			<form method="post">
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
-							<label>Nombre</label>
-							<input type="text" name="name.full" class="form-control" value="{{formData.[name.full]}}" placeholder="Nombre">
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
-							<label>Email</label>
-							<input type="email" name="email" class="form-control" value="{{formData.email}}" placeholder="Email">
-						</div>
+		<div class="row">
+			<div class="col-sm-12 col-md-12">
+				<form method="post">
+					<input type="hidden" name="action" value="contact">
+				<div class="col col-md-6 col-sm-12">
+					<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+						<label>Nombre</label>
+						<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-6 col-sm-12">
-						<div class="form-group">
-							<label>Teléfono</label>
-							<input type="text" name="phone" placeholder="(opcional)" class="form-control" value="{{formData.phone}}">
-						</div>
-					</div>
-					<div class="col-md-6 col-sm-12">
-						<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
-							<label>Por qué motivo nos contactas?</label>
-							<select name="enquiryType" class="form-control">
-								<option value="">(elije uno)</option>
-								{{#each enquiryTypes}}
-								<option value="{{value}}">{{label}}</option>
-								{{/each}}
-							</select>
-						</div>
+				<div class="col col-md-6 col-sm-12">
+					<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+						<label>Email</label>
+						<input type="email" name="email" class="form-control" value="{{formData.email}}">
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
-							<label>Mensaje</label>
-							<textarea name="message" placeholder="Deja un mensaje..." rows="4" class="form-control">{{formData.message}}</textarea>
-						</div>
+				<div class="col col-md-6 col-sm-12">
+					<div class="form-group">
+						<label>Teléfono</label>
+						<input type="text" name="phone" placeholder="*opcional" class="form-control" value="{{formData.phone}}">
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-md-12">
-						<div class="form-actions">
-							<button type="submit" class="btn btn-primary">Enviar</button>
-						</div>
+				<div class="col col-md-6 col-sm-12">
+					<div class="form-group {{#if validationErrors.enquiryType}}has-error{{/if}}">
+						<label>Motivo del mensaje</label>
+						<select name="enquiryType" class="form-control">
+							<option value="">elije</option>
+							{{#each enquiryTypes}}
+							<option value="{{value}}">{{label}}</option>
+							{{/each}}
+						</select>
 					</div>
 				</div>
-			</form>
-		{{/if}}
+				<div class="col col-md-12 col-sm-12">
+					<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+						<label>Message</label>
+						<textarea name="message" placeholder="Leave us a message..." rows="4" class="form-control">{{formData.message}}</textarea>
+					</div>
+				</div>
+				<div class="col col-md-12 col-sm-12">
+					<div class="form-actions">
+						<button type="submit" class="btn btn-primary">Enviar</button>
+					</div>
+				</div>
+				</form>
+				{{/if}}
+			</div>
+		</div>
 	</div>
+
 </div>

@@ -6,7 +6,7 @@
 		<div class="cubrir-video">
 			<div id="video" data-vide-bg="images/fondo" data-vide-options="posterType: jpg, position: 50% 50%, resizing:true">
 					<div class="home-contenido">
-						 <h1 class="border wow bounceInDown"> Choting Your Mind </h1>
+						 <h1 class="border wow bounceInDown"> Coding Your Mind </h1>
 						 <h2 class="wow bounceInRight" data-wow-delay="0.5s"> de tu mente a la web </h2>
 						<div class="conocenos escondido">
 							<a href="#servicios">
@@ -83,7 +83,7 @@
 			<div class="row">
 			<div class="col-md-6 col-md-offset-3 text-center white">
 				<h2>¿Te interesan nuestros servicios?</h2>
-				<a role="button" class="btn btn-primary" href="#contacto" >Contactanos</a>
+				<a role="button" class="btn btn-primary" href="/contact" >Contactanos</a>
 			 </div>
 			</div>>
 		</div>
@@ -126,46 +126,8 @@
 	<div class="contacto section" id="contacto">
 			<h2 class="tituloSeccion"> CONTACTO </h2>
 			<div class="container">
-				  <div class="col-12 col-md-6 contacto-formulario wow slideInLeft">
-						<form method="post" action="./mail.php">
-							<div class="row">
-								<div class="col-md-6 col-sm-6 col">
-									<div class="form-group">
-										 <label for="nombre">Nombre</label>
-										 <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre" >
-									 </div>
-								</div>
-								<div class="col-md-6 col-sm-6 col">
-									<div class="form-group">
-										 <label for="email">Email</label>
-										 <input type="email" class="form-control" id="email" name="email" placeholder="mail@ejemplo.com">
-									 </div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-12 col">
-									<div class="form-group">
-										 <label for="tema">Tema</label>
-										 <input type="text" class="form-control" id="tema" name="tema" placeholder="Tema">
-									 </div>
-								 </div>
-							</div>
-							<div class="row">
-								<div class="col-12 col">
-									<div class="form-group">
-									    <label for="mensaje">Mensaje</label>
-									    <textarea class="form-control" id="mensaje" rows="3" placeholder="Mensjae..." name="mensaje"></textarea>
-									 </div>
-								</div>
-							</div>
-
-							<div class="row">
-								<div class="col-12">
-									<button name="submit" type="submit" class="btn btn-primary">Enviar</button>
-								</div>
-							</div>
-
-						</form>
+				  <div class="col-12 col-md-6 wow slideInLeft">
+						<div id="map"></div>
 					</div>
 
 				  <div class="col-12 col-md-6 contacto-datos wow slideInRight">
@@ -176,7 +138,7 @@
 									<i class="fa fa-phone" aria-hidden="true"></i><span>+54 9 298-4862631</span>
 								</div>
 								<div class="contacto-mail">
-									<i class="fa fa-envelope-o" aria-hidden="true"></i><span>contacto@codingyourmind.com</span>
+									<i href="/contact" class="fa fa-envelope-o" aria-hidden="true"></i><span>contacto@codingyourmind.com</span>
 								</div>
 								<div class="redes-sociales">
 									</br><p> También encontranos en nuestras redes sociales: </p>
@@ -189,5 +151,8 @@
 								</div>
 					</div>
 				</div>
+		</div>
+		<div id="footer">
+			<h4>@codingyourmind</h4>
 		</div>
 	</div>
