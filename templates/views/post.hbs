@@ -8,24 +8,54 @@
 </style>
 
 <div class="post-page">
-
-{{>nav}}
-	<div class="post-header">
-		<div class="cover">
-			<div class="post-header-content center">
-				<h3>{{data.post.title}}</h3>
-			</div>
-		</div>
-	</div>
-
-	<div class="row">
-		<div class="post-contenido">
-			<div class="col-9">
-				<div class="container">
-					{{{data.post.content.extended}}}
+	{{>nav}}
+		<div class="post-header">
+			<div class="cover">
+				<div class="post-header-content center">
+					<h3>{{data.post.title}}</h3>
 				</div>
 			</div>
 		</div>
-	</div>
 
+
+			<div class="col col-md-9">
+					<div class="row">
+						<div class="post-contenido">
+							{{{data.post.content.extended}}}
+						</div>
+					</div>
+			</div>
+
+			<div class="col col-md-3 posts-relacionados">
+					<h4>Posts Relacionados</h4>
+					<div class="posts-relacionados-container">
+						{{# each data.posts }}
+						<div class="row">
+							<a href="{{postUrl slug}}" >
+
+								<div class="col col-md-4">
+									<img src="{{{cloudinaryUrl image crop='fit' }}}" alt="">
+								</div>
+								<div class="col col-md-8">
+									<h6>{{title}}</h6>
+									<div class="posts-date">
+										<p><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> {{date publishedDate format='DD MM YYYY'}}</p>
+									</div>
+								</div>
+
+							</a>
+						</div>
+					{{/each}}
+				</div>
+				<div class="post-compartir">
+					<h4>Comparte este post</h4>
+					<div class="row">
+							<a class="compartir-post-twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{{data.post.title}}}&url=https://codingyourmind.com/blog/post/{{{data.post.slug}}}" ><i class="fa fa-twitter-square wow bounceInRight" data-wow-delay="0.5s" aria-hidden="true"></i></a>
+							<a class="compartir-post-facebook" href="https://www.facebook.com/sharer/sharer.php?u=codingyourmind.com/blog/post/{{{data.post.slug}}}" target="_blank"><i class="fa fa-facebook-square wow bounceInRight" data-wow-delay="0.5s" aria-hidden="true"></i></a>
+					</div>
+				</div>
+
+			</div>
+			{{> comments}}
 </div>
+{{>footer}}

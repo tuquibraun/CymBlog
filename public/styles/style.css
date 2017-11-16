@@ -14,29 +14,20 @@ body {
 #footer h4 {
   margin: 0px;
   color: black;
+  font-size: 1em;
 }
 
 .contacto-formulario {
-  background-image: url("../images/contacto.jpg");
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  padding-bottom: 60px;
+  color: black;
 }
 
 .contacto-formulario .form-control{
     background-color: rgba(0, 0, 0, 0);
-    color: floralwhite;
+    color: black;
 }
 
 .contacto-formulario option {
   color: black;
-}
-
-.contacto-formulario .tituloSeccion{
-  color: white;
-  padding-bottom: 30px;
 }
 
 .contacto-formulario button {
@@ -49,11 +40,19 @@ body {
 
 .contacto-formulario .jumbotron {
   background-color: rgba(0, 0, 0, 0);
-  color: ghostwhite;
+  color: black;
+  text-align: center;
 }
 
 .contacto-formulario .jumbotron p, .contacto-formulario .jumbotron h1 {
   text-align: center;
+}
+
+.form-enviado {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
 }
 
 .owl-theme .owl-nav [class*='owl-'] {
@@ -69,6 +68,306 @@ body {
 /**** HOME ****/
 /*************/
 
+/*=============================================
+SLIDE
+=============================================*/
+
+#slide{
+	position:relative;
+	margin:auto;
+	width:100%;
+  height: 100%;
+	overflow: hidden;
+	padding:0;
+}
+
+#slide ul{
+	position:relative;
+	left:0%;
+	margin:auto;
+	height:auto;
+	width:300%;
+	clear:both;
+	display: table;
+  padding: 0px;
+  height: 100%;
+}
+
+#slide ul li{
+	position: relative;
+	float:left;
+	width:33.3%;
+  height: 100%;
+}
+
+#slide ul li img, .cielo{
+	width: 100%;
+  height: 100%
+}
+
+#slide .slideOpcion1 img, .cielo{
+  position: absolute;
+	opacity:1;
+  z-index: 2;
+}
+
+#slide .slideOpcion1 .textosSlide{
+	position:absolute;
+	width:60%;
+	top:20%;
+	left:10%;
+  z-index: 2;
+}
+
+
+#slide .slideOpcion2 img{
+	position:absolute;
+	opacity:1;
+	/*top:5%;
+	left:15%;
+	width:25%;*/
+}
+
+#slide .slideOpcion2 .textosSlide{
+	position:absolute;
+	text-align:right;
+  z-index: 2;
+	/*width:40%;
+	top:15%;
+	right:15%;*/
+}
+
+#slide .slideOpciones h1{
+	text-transform: uppercase;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	opacity:1;
+	top:-10%;
+	/*color:#333;*/
+}
+
+#slide .slideOpciones h2{
+	text-transform: uppercase;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	opacity:1;
+	top:-10%;
+	/*color:#777;*/
+}
+
+#slide .slideOpciones h3{
+	text-transform: uppercase;
+	font-family: 'Ubuntu Condensed', sans-serif;
+	opacity:1;
+	top:-10%;
+	/*color:#888;*/
+}
+
+#slide .slideOpciones button{
+	border:0px;
+	margin-top:10px;
+	opacity:1;
+	top:-10%;
+}
+
+#slide .slideOpciones button:hover{
+	background:black;
+	color:white;
+	border:0px;
+}
+
+#slide .slideOpciones button span{
+	margin-left:10px;
+}
+
+#cohete:active {
+  animation-name: example2;
+  animation-duration: 3s;
+  animation-fill-mode:forwards;
+}
+
+#cohete {
+  width: 120px !important;
+  height: 230px !important;
+}
+
+
+.entrar{
+    animation-name: example;
+    animation-duration: 2s;
+    animation-fill-mode:forwards;
+}
+
+.salir {
+  animation-name: example2;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes example {
+    0%   {right:120%; top:85%; transform: rotate(47deg);}
+    80%  {right:20%; top:20%;}
+    100% {right:20%; top:35%;}
+}
+
+@keyframes example2 {
+    0%  {right:20%; top:35%;}
+    30% {right:35%; top:-20%; transform: rotate(-80deg);}
+    50% {right:95%; top:-50%; transform: rotate(-80deg);}
+    80% {right:180%; top:25%; transform: rotate(-250deg);}
+    100% {right:-20%; top:25%; transform: rotate( -270deg);}
+}
+
+/*=============================================
+CIELO
+=============================================*/
+
+.cielo {
+  z-index: -5;
+}
+
+@keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-webkit-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-moz-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@-ms-keyframes move-twink-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
+}
+
+@keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-webkit-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-moz-keyframes move-clouds-back {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+@-ms-keyframes move-clouds-back {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
+}
+
+.stars,
+.twinkling,
+.clouds {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.stars {
+  background: #000 url(http://sylvaingarnot.fr/media/stars.png) repeat top center;
+  z-index: 0;
+}
+
+.twinkling {
+  background: transparent url(http://sylvaingarnot.fr/media/twinkling.png) repeat top center;
+  z-index: 1;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
+}
+
+.clouds {
+  background: transparent url(http://sylvaingarnot.fr/media/clouds.png) repeat top center;
+  z-index: 3;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
+}
+
+/*=============================================
+FLECHAS
+=============================================*/
+
+#slide .flechas{
+	position:absolute;
+	font-size:2em;
+	color:white;
+	cursor:pointer;
+	z-index:2;
+}
+
+#slide #retroceder{
+	background:#666;
+	left:0;
+  top: 40%;
+	opacity: 0;
+}
+
+#slide #avanzar{
+	background:#666;
+	right:0;
+  top: 40%;
+	opacity: 0;
+}
+
+#slide #retroceder:hover, #slide #avanzar:hover{
+	background:#777;
+}
+
+#slide #retroceder:active, #slide #avanzar:active{
+	background:#444;
+}
+
 .home {
   background-size: cover;
   background-position: center;
@@ -79,11 +378,17 @@ body {
   height: 100vh;
 }
 
+#home .row {
+  padding: 0px;
+  margin: 0px;
+  height: 100%;
+}
+
 .cubrir-video {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background: rgba(75,121,161,0.4)
+  background: linear-gradient(135deg, rgba(167,207,223,0.4) 0%,rgba(35,83,138,0.5) 100%);;
 }
 
 #video {
@@ -101,7 +406,8 @@ body {
   letter-spacing: 8px;
   text-align: center;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 3.5em;
+  font-family: 'Nunito', sans-serif;
   background-color: rgba(0,0,0,0.6);
   color: white;
   padding: 20px;
@@ -114,7 +420,8 @@ body {
 
 .home h2 {
   padding-top: 30px;
-  font-size: 2em;
+  font-size: 2.5em;
+  font-family: 'Nunito', sans-serif;
   color: white;
   text-transform: uppercase;
   text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
@@ -209,7 +516,7 @@ body {
 }
 
 .blog-content {
-  margin-top: 5vh;
+  margin: 5vh;
 }
 
 .post-img {
@@ -220,12 +527,8 @@ body {
 .post-data {
   margin: 0;
   width: 100%;
-  height: 55%;
+  height: 60%;
   padding: 15px;
-}
-
-.leermas {
-  height: 5%;
 }
 
 .blog p span:first-child {
@@ -240,6 +543,7 @@ body {
 
 .blog .posts {
   column-count: 2;
+  column-gap: 3em;
   padding: 1em;
 }
 
@@ -268,12 +572,11 @@ body {
   text-decoration: none;
 }
 
-.blog hr {
-width: 100%;
-height: 1px;
-margin-top: 25px;
-margin-bottom: 50px;
-background-color: black;
+.blog h4 {
+  background: #1abc9c;
+  padding: 10px 0px;
+  color: ghostwhite;
+  margin-top: 60px;
 }
 
 .blog .pagination {
@@ -291,6 +594,7 @@ background-color: black;
 
 .post-page {
   overflow: hidden;
+  padding-bottom: 60px;
 }
 .post-header {
   height: 60vh;
@@ -325,7 +629,9 @@ background-color: black;
   background-color: white;
   position: relative;
   z-index: 1;
-  padding-top: 60px;
+  margin-top: 60px;
+  padding-left: 30px;
+  padding-right: 50px;
 }
 
 .post-contenido-lateral hr {
@@ -334,6 +640,96 @@ background-color: black;
   height: 1px;
 }
 
+.posts-relacionados {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.post-page hr {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid #1abc9c;
+}
+
+.posts-relacionados h4 {
+  background: #1abc9c;
+  padding: 10px 0px;
+  color: ghostwhite;
+  margin-top: 60px;
+}
+
+.posts-relacionados h6 {
+  margin: 0px;
+  padding-top: 7px;
+  padding-bottom: 10px;
+}
+
+.posts-relacionados .row {
+  padding-top: 15px;
+  width: 100%;
+  display: block;
+  margin: auto;
+  transition: all 0.5s;
+}
+.posts-date p {
+  font-size: 0.8em;
+  margin: 0px;
+}
+
+.posts-relacionados .col{
+  padding: 0px;
+}
+
+.posts-relacionados img {
+  width: 100%;
+  padding-right: 10px;
+}
+
+.post-compartir .row {
+  display: flex;
+}
+
+.post-compartir .row a {
+  font-size: 4em;
+  padding-left: 15px;
+}
+
+/* Facebook */
+.compartir-post-facebook {
+    color: #3B5998;
+}
+
+.compartir-post-facebook:hover {
+    color: #314B7F;
+}
+
+/* Twitter */
+.compartir-post-twitter {
+    color: #55ACEE;
+}
+
+.compartir-post-twitter:hover {
+    color: #2E5C7F;
+}
+
+/* Google */
+.compartir-post-google {
+    color: #dd4b39;
+}
+
+.compartir-post-google:hover {
+    color: #7F2B21;
+}
+
+/* Pinterest */
+.compartir-post-pinterest {
+    color: #cb2027;
+}
+
+.compartir-post-pinterest:hover {
+    color: #7F1418;
+}
 
 .tituloSeccion {
   display: block;
@@ -463,27 +859,25 @@ background-color: black;
 .contacto input, .contacto textarea {
   background-color: transparent;
 }
+
 #ic-facebook {
   color: #3b5998;
   transition: all 1s linear;
-
 }
+
 #ic-instagram {
   color: #d8246d;
   transition: all 1s;
-
 }
 
 #ic-linkedin {
   color: #0177b5;
   transition: all 1s;
-
 }
 
 #ic-twitter {
   color: #00aced;
   transition: all 1s;
-
 }
 
 @font-face {

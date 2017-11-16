@@ -14,7 +14,8 @@
   	<link href="/styles/owl.theme.default.css" rel="stylesheet">
 		<link href="/styles/style.css" rel="stylesheet">
 		<link href="/styles/animate.css" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Nunito|Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://use.fontawesome.com/1287cda04e.js"></script>
 		<!-- Magnific Popup core CSS file -->
 		<link href="/styles/magnific-popup.css" rel="stylesheet">
@@ -39,34 +40,6 @@
 			<div id="preloader">
 				<div id="status"></div>
 			</div>
-			<!--
-				Flash messages allow you to display once-off status messages to users, e.g. form
-				validation errors, success messages, etc
-			-->
-			{{#if messages}}
-			<div id="flash-messages" class="container">
-				{{#if messages.info}}
-				<div class="alert alert-info">
-						{{{flashMessages messages.info}}}
-				</div>
-				{{/if}}
-				{{#if messages.success}}
-				<div class="alert alert-success">
-						{{{flashMessages messages.success}}}
-				</div>
-				{{/if}}
-				{{#if messages.warning}}
-				<div class="alert alert-warning">
-						{{{flashMessages messages.warning}}}
-				</div>
-				{{/if}}
-				{{#if messages.error}}
-				<div class="alert alert-danger">
-						{{{flashMessages messages.error}}}
-				</div>
-				{{/if}}
-			</div>
-			{{/if}}
 			<!-- The content block should contain the body of your template's content-->
 			{{{body}}}
 		</div>
@@ -94,8 +67,10 @@
 		<script src="/js/classie.js"></script>
 		<script src="/js/uiMorphingButton_inflow.js"></script>
 		<script src="/js/jquery.vide.js"></script>
+		<script type="text/javascript" async defer src="//assets.pinterest.com/js/pinit.js"></script>
 		<!-- Magnific Popup core JS file -->
 		<script src="/js/jquery.magnific-popup.js"></script>
+		<script src="/js/typewriter.js"></script>
 		<script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
 
 			{{{isAdminEditorJS user}}}

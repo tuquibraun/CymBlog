@@ -43,6 +43,12 @@ nav {
   height: 100vh;
 }
 
+#home .row {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+
 .cubrir-video {
   width: 100%;
   height: 100%;

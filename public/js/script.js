@@ -7,6 +7,174 @@ $(window).load(function() {
 
 $(document).ready(function() {
 
+	/*=============================================
+			VARIABLES
+=============================================*/
+
+var item = 0;
+var itemPaginacion = $("#paginacion li");
+var interrumpirCiclo = false;
+var imgProducto = $(".imgProducto");
+var titulos1 = $("#slide h1");
+var titulos2 = $("#slide h2");
+var titulos3 = $("#slide h3");
+var btnVerProducto = $("#slide button");
+var detenerIntervalo = false;
+var toogle = false;
+
+$("#slide ul li").css({"width":100/$("#slide ul li").length + "%"})
+$("#slide ul").css({"width":$("#slide ul li").length*100 + "%"})
+
+
+/*=============================================
+PAGINACIÓN
+=============================================*/
+
+$("#paginacion li").click(function(){
+
+	item = $(this).attr("item")-1;
+
+	movimientoSlide(item);
+
+})
+
+/*=============================================
+AVANZAR
+=============================================*/
+
+function avanzar(){
+
+	if(item == $("#slide ul li").length -1){
+
+		item = 0;
+
+	}else{
+
+		item++
+
+	}
+
+	movimientoSlide(item);
+
+}
+
+$("#slide #avanzar").click(function(){
+
+	if (item == 0) {
+		$("#cohete").removeClass('entrar');
+		$("#cohete").addClass('salir')
+		setTimeout(function () {
+			avanzar();
+		}, 2900);
+
+
+	}
+
+
+
+})
+
+/*=============================================
+RETROCEDER
+=============================================*/
+
+$("#slide #retroceder").click(function(){
+
+	if (item == 1) {
+		setTimeout(function () {
+			$("#cohete").removeClass('salir');
+			$("#cohete").addClass('entrar')
+		}, 600);
+
+	}
+
+	if(item == 0){
+
+		item = $("#slide ul li").length -1;
+
+	}else{
+
+		item--
+
+	}
+
+	movimientoSlide(item);
+
+})
+
+/*=============================================
+MOVIMIENTO SLIDE
+=============================================*/
+
+function movimientoSlide(item){
+
+	// http://easings.net/es
+
+	$("#slide ul").animate({"left": item * -100 + "%"}, 1000)
+
+	interrumpirCiclo = true;
+}
+
+/*=============================================
+INTERVALO
+=============================================
+
+setInterval(function(){
+
+	if(interrumpirCiclo){
+
+		interrumpirCiclo = false;
+
+	}else{
+
+		if(!detenerIntervalo){
+
+			avanzar();
+
+		}
+
+	}
+
+},3000)*/
+
+/*=============================================
+APARECER FLECHAS
+=============================================*/
+
+$("#slide").mouseover(function(){
+
+	$("#slide #retroceder").css({"opacity":1})
+	$("#slide #avanzar").css({"opacity":1})
+
+	detenerIntervalo = true;
+
+})
+
+
+$("#slide").mouseout(function(){
+
+	$("#slide #retroceder").css({"opacity":0})
+	$("#slide #avanzar").css({"opacity":0})
+
+	detenerIntervalo = false;
+
+})
+/*
+	var typewriter = new Typewriter(writer, {
+	    loop: true,
+			cursor: '_'
+	});
+
+	typewriter.pauseFor(1000)
+	 .typeString('De tu mente a la web!')
+	 .pauseFor(2500)
+	 .deleteAll()
+	 .typeString('Creamos aplicaciones web')
+	 .pauseFor(2500)
+	 .deleteChars(3)
+	 .typeString('moviles')
+	 .start();
+*/
 	$('.servicio-card').flip({
 		trigger: 'manual'
 	})

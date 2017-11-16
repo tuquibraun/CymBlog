@@ -13,38 +13,38 @@
 	<div class="blog-content">
 
 			<div class="row">
-				<div class="col-12">
-					<div class="container posts">
+				<div class="col col-md-9">
+					<div class="posts">
 
 								{{# each data.posts.results}}
 								<div class="posts-child sombra1">
 									<a href="{{postUrl slug}}" >
 												{{#if image}}<img src="{{{cloudinaryUrl image crop='fit' }}}" class="post-img">{{/if}}
 											<div class="post-data">
-												<span> {{date publishedDate format='DD MM YYYY'}}</span>|<span class="text-muted">{{{categoryList categories}}}</span>
-												<h5>{{{title}}}</h5>
-												<p class="truncate">{{{content.brief}}}</p>
+												<a href="{{postUrl slug}}" >
+													<span> {{date publishedDate format='DD MM YYYY'}}</span>|<span class="text-muted">{{{categoryList categories}}}</span>
+													<h5>{{{title}}}</h5>
+													<p class="truncate">{{{content.brief}}}</p>
+												</a>
 											</div>
 											</a>
 								</div>
 								{{/each}}
 					</div>
 				</div>
-				<!--<div class="col s3">
-					<ul class="collection with-header">
-						<li class="collection-header"><h4>First Names</h4></li>
-						<li class="collection-item"><a href="/blog">Alvin</a></li>
+				<div class="col col-md-3">
+					<h4>Temas</h4>
+					<div class="temas-container">
 						{{# each data.categories }}
-						<li class="collection-item"><a href="{{categoryUrl key}}">{{name}}</a></li>
+							<span class="temas"><i class="fa fa-tag" aria-hidden="true"></i><a href="{{categoryUrl key}}">{{name}}</a></span>
 						{{/each}}
-					</ul>
-
-				</div> -->
+					</div>
+				</div>
 			</div>
 
 
 
 			{{>pagination}}
 		</div>
-
+		{{>footer}}
 </div>

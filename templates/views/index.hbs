@@ -1,22 +1,7 @@
 {{!!< default}}
-<div id="home">
-
-	<!-- SECCION HOME -->
-	<div class="home section">
-		<div class="cubrir-video">
-			<div id="video" data-vide-bg="images/fondo" data-vide-options="posterType: jpg, position: 50% 50%, resizing:true">
-					<div class="home-contenido">
-						 <h1 class="border wow bounceInDown"> Coding Your Mind </h1>
-						 <h2 class="wow bounceInRight" data-wow-delay="0.5s"> de tu mente a la web </h2>
-						<div class="conocenos escondido">
-							<a href="#servicios">
-								<p>CONOCENOS</p>
-								<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-							</a>
-						</div>
-				</div>
-			</div>
-		</div>
+<!-- SECCION HOME -->
+	<div id="home">
+			{{>home}}
 	</div>
 
 <!-- NavBar-->
@@ -97,7 +82,7 @@
             <div id="owl-carousel" class="owl-carousel owl-theme">
 							<a href="images/servicios/exp1.png" class="image-link">
 								<div class="item">
-									<img  class="img-responsive img-rounded" src="images/servicios/exp1.png" alt="mockup gimnasio vital">
+									<img class="img-responsive img-rounded" src="images/servicios/exp1.png" alt="mockup gimnasio vital">
 								</div>
 							</a>
 						</div>
@@ -126,8 +111,46 @@
 	<div class="contacto section" id="contacto">
 			<h2 class="tituloSeccion"> CONTACTO </h2>
 			<div class="container">
-				  <div class="col-12 col-md-6 wow slideInLeft">
-						<div id="map"></div>
+				  <div class="col-12 col-md-6 wow slideInLeft contacto-formulario">
+						<form method="post" id="form">
+								<input type="hidden" name="action" value="contact">
+								<div class="col col-md-6 col-sm-12">
+									<div class="form-group {{#if validationErrors.name}}has-error{{/if}}">
+										<label>Nombre</label>
+										<input type="text" name="name.full"  class="form-control" value="{{formData.[name.full]}}">
+									</div>
+								</div>
+								<div class="col col-md-6 col-sm-12">
+									<div class="form-group {{#if validationErrors.email}}has-error{{/if}}">
+										<label>Email</label>
+										<input type="email" name="email" class="form-control" value="{{formData.email}}">
+									</div>
+								</div>
+								<div class="col col-md-6 col-sm-12">
+								<div class="form-group">
+									<label>Teléfono</label>
+									<input type="text" name="phone" placeholder="*opcional" class="form-control" value="{{formData.phone}}">
+								</div>
+							</div>
+							<div class="col col-md-6 col-sm-12">
+								<div class="form-group">
+									<label>Motivo del mensaje</label>
+									<input type="text" name="enquiryType" placeholder="*opcional" class="form-control" value="{{formData.enquiryType}}">
+								</div>
+							</div>
+							<div class="col col-md-12 col-sm-12">
+								<div class="form-group {{#if validationErrors.message}}has-error{{/if}} ">
+									<label>Mensaje</label>
+									<textarea name="message" placeholder="Dejanos un mensaje..." rows="4" class="form-control">{{formData.message}}</textarea>
+								</div>
+							</div>
+							<div class="col col-md-12 col-sm-12">
+								<div class="form-actions">
+									<button id="eviar-form" type="submit" class="btn btn-primary">Enviar</button>
+								</div>
+							</div>
+						</form>
+
 					</div>
 
 				  <div class="col-12 col-md-6 contacto-datos wow slideInRight">
@@ -155,4 +178,9 @@
 		<div id="footer">
 			<h4>@codingyourmind</h4>
 		</div>
-	</div>
+		{{#if enquirySubmitted}}
+		<div class="alert alert-success alert-dismissible form-enviado" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Su mensaje fue enviado!</strong> Nos pondremos en contacto lo antes posible.
+		</div>
+		{{/if}}
